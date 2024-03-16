@@ -1,0 +1,295 @@
+.hero {
+    height: 80dvh;
+    background: linear-gradient(180deg,#023020, #265f4a );
+    position: relative;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+
+    .main-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        z-index: 1;
+        div {
+            h2 {
+                font-size: 1.3rem;
+                font-weight: 600;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+    
+                .me {
+                    color: #416D19;
+                    font-size: 1.5rem;
+                    font-weight: 800;
+                }
+            }
+    
+            h1 {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                font-size: 1.3rem;
+                font-weight: 600;
+    
+                span {
+                    color: orangered;
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                }
+            }
+    
+            .details {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                div {
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    display: flex;
+                    flex-direction: row;
+                    .project-btn {
+                        border: 2px solid white;
+                        color: white;
+                        padding: 0.5rem;
+                        font-size: 1rem;
+                        border-radius: 8px;
+                        margin-right: 1rem;
+                        background-color: transparent;
+                    }
+        
+                    .contact-btn {
+                        border: 2px solid white;
+                        color: black;
+                        font-size: 1rem;
+                        background-color: white;
+                        padding: 0.5rem;
+                        font-weight: 600;
+                        border-radius: 8px;
+                    }
+                }
+                img {
+                    margin-top: 1rem;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+        }
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .my-photo {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                height: 100%;
+                bottom: 0;
+                div {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    img {
+                        width: 320px;
+                        height: 320px;
+                    }
+                }
+            }
+        }
+    }
+    .bg-text {
+        position: absolute;
+        color: white;
+        opacity: 0.3;
+        font-size: 15vh;
+        left: 0%;
+        font-weight: 800;
+        z-index: 2;
+        white-space: nowrap;
+        bottom: 0%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .hero {    
+        .main-container {
+            flex-direction: row;
+            align-items: baseline;
+            gap: 3rem;
+            padding: 2rem;
+            padding-top: 6rem;
+            div {
+                h2 {
+                    font-size: 2.2rem;
+                    .me {
+                        font-size: 2.6rem;
+                    }
+                }
+        
+                h1 {
+                    font-size: 2.2rem;
+                    span {
+                        font-size: 2.6rem;
+                    }
+                }
+                .details {
+                    flex-direction: row;
+                    div {
+                        .project-btn {
+                            padding: 0.7rem;
+                            font-size: 1.3rem;
+                        }
+                        .contact-btn {
+                            font-size: 1.3rem;
+                            padding: 0.7rem;
+                        }
+                    }
+                    img {
+                        margin-top: 0rem;
+                        margin-left: 0.5rem;
+                    }
+                }
+    
+            }
+            div {
+                .my-photo {
+                    div {
+                        img {
+                            width: 500px;
+                            height: 500px;
+                        }
+                    }
+                }
+            }
+        }
+        .bg-text {
+            font-size: 25vh;
+            bottom: -5rem;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {    
+        .main-container {
+            gap: 20rem;
+            div {
+                h2 {
+                    font-size: 2.4rem;
+                    .me {
+                        font-size: 2.8rem;
+                    }
+                }
+        
+                h1 {
+                    font-size: 2.4rem;
+                    span {
+                        font-size: 2.8rem;
+                    }
+                }
+                .details {
+                    div {
+                        .project-btn {
+                            padding: 0.8rem;
+                            font-size: 1.5rem;
+                        }
+                        .contact-btn {
+                            font-size: 1.5rem;
+                            padding: 0.8rem;
+                        }
+                    }
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+    
+            }
+        }
+        .bg-text {
+            font-size: 30vh;
+            bottom: -2rem;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero {    
+        .main-container {
+            padding-left: 5rem;
+            gap: 20rem;
+            div {
+                h2 {
+                    .me {
+                        font-size: 3.2rem;
+                    }
+                }
+        
+                h1 {
+                    span {
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+            div {
+                .my-photo {
+                    div {
+                        img {
+                            width: 500px;
+                            height: 500px;
+                        }
+                    }
+                }
+            }
+        }
+        .bg-text {
+            font-size: 38vh;
+            bottom: -5rem;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {    
+        .main-container {
+            padding-left: 5rem;
+            gap: 25rem;
+            div {
+                h2 {
+                    .me {
+                        font-size: 3.2rem;
+                    }
+                }
+        
+                h1 {
+                    span {
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+            div {
+                .my-photo {
+                    div {
+                        img {
+                            width: 600px;
+                            height: 600px;
+                        }
+                    }
+                }
+            }
+        }
+        .bg-text {
+            font-size: 38vh;
+            bottom: -5rem;
+        }
+    }
+}

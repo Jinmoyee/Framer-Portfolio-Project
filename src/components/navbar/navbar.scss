@@ -1,0 +1,35 @@
+.navbar {
+    height: 20dvh;
+    display: flex;
+    justify-content: right;
+    padding: 2rem 2rem;
+    
+    span {
+        display: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .wrapper {
+        display: flex;
+        gap: 1rem;
+        a {
+            
+        }
+    }
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 2.7rem 10rem;
+        span {
+            display: block;
+        }
+    }
+}
