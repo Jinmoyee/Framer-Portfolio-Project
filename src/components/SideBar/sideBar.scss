@@ -12,7 +12,23 @@
         top: 0;
         left: 0;
         bottom: 0;
-        width: 400px;
+        width: 200px;
         z-index: 50;
+    }
+}
+
+@media (min-width: 768px) {
+    .side-bar-container {    
+        .side-bar-links {
+            width: 300px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .side-bar-container {    
+        .side-bar-links {
+            width: 400px;
+        }
     }
 }

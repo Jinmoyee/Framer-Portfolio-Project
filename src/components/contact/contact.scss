@@ -6,6 +6,7 @@
     height: 100dvh;
     width: 100%;
     font-size: 1.2rem;
+    position: relative;
     .details {
         margin-top: 2rem;
         margin-bottom: 1rem;
@@ -31,6 +32,17 @@
             }   
         }
 
+    }
+
+    
+    .svg {
+        position: absolute;
+        text-align: center;
+        color: orangered;
+        top: auto;
+        bottom: -5vh;
+        right: 0vh;
+        left: -5vh;
     }
 
     .submit-form {
@@ -63,6 +75,22 @@
             width: 90%;
             padding: 10px;
             border: none;
+        }
+        .errors {
+            width: 100%;
+            position: relative;
+            p:first-child {
+                color: red;
+                position: absolute;
+                bottom: 0;
+                top: 0.1px;
+            }
+            p:last-child {
+                color: rgb(11, 138, 11);
+                position: absolute;
+                bottom: 0;
+                top: 0.1px;
+            }
         }
     }
 }
@@ -98,7 +126,7 @@
                 }   
             }
         }
-    
+            
         .submit-form {
             height: 50vh;
             gap: 15px;
@@ -134,6 +162,13 @@
             }
     
         }
+
+        .svg {
+            top: auto;
+            bottom: 25vh;
+            left: auto;
+            right: 20vh;
+        }
     
         .submit-form {
             margin-top: 0rem;
@@ -149,6 +184,7 @@
                 width: 100%;
                 font-size: 1.4rem;
                 padding: 15px;
+                cursor: pointer;
             }
         }
     }
