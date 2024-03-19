@@ -1,0 +1,178 @@
+.section {
+    background-image: url("../../assets/icons/starry-night-sky.jpg");
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    .section-data {
+        display: flex;
+        width: 95%;
+        height: 100dvh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8rem;
+        padding-top: 10rem;
+
+        .image-section {
+            width: 90%;
+            height: 10rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                border: 3px solid white;
+                object-fit: cover;
+            }
+        }
+
+        .title-section {
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            .motion-div {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2 {
+                    padding-top: 1rem;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    color: orangered;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+
+                .button-tag {
+                    button {
+                        background-color: orangered;
+                        color: white;
+                        padding: 0.5rem;
+                        width: 100%;
+                        border-radius: 10px;
+                        font-size: 1.1rem;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.heading {
+    position: relative;
+    .title-tag {
+        position: sticky;
+        top: 3%;
+        left: 0;
+        padding-top: 50px;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+
+        h1 {
+            span {
+                color: orangered;
+            }
+        }
+
+        div {
+            height: 5px;
+            width: 100%;
+            background-color: white;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .section {
+        .section-data {
+            gap: 10rem;
+            padding-top: 10rem;
+    
+            .image-section {
+                width: 90%;
+                height: 20rem;
+            }
+    
+            .title-section {
+                .motion-div {
+                    gap: 15px;
+                    h2 {
+                        font-size: 2.1rem;
+                        color: orangered;
+                    }
+    
+                    p {
+                        font-size: 1.4rem;
+                    }
+    
+                    .button-tag {
+                        button {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .section {
+        .section-data {
+            width: 80%;
+            flex-direction: row;
+            padding-top: 5rem;
+            gap: 4rem;
+
+    
+            .image-section {
+                width: 90%;
+                height: 23rem;
+            }
+    
+            .title-section {
+                margin-bottom: 10%;
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                .motion-div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+    
+                    h2 {
+                        padding-top: 0rem;
+                        font-size: 2rem;
+                    }
+    
+                    p {
+                        font-size: 1.3rem;
+                    }
+    
+                    .button-tag {
+                        button {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .heading {
+        .title-tag {
+            font-size: 1.5rem;
+        }
+    }
+} 

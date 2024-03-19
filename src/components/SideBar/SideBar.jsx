@@ -8,7 +8,8 @@ const varients = {
   open: {
     clipPath: "circle(1200px at 50px 50px)",
     transition: {
-      type: "linear",
+      delay: 0.5,
+      type: "spring",
       stiffness: 20,
     },
   },
@@ -16,7 +17,7 @@ const varients = {
     clipPath: "circle(30px at 50px 50px)",
     transition: {
       delay: 0.5,
-      type: "linear",
+      type: "spring",
       stiffness: 400,
       damping: 40,
     },

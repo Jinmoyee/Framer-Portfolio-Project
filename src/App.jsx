@@ -3,12 +3,14 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Parallax from "./components/parallax/Parallax";
 import Skills from "./components/skills/Skills";
-import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
+import MouseCursor from "./components/corsor/MouseCursor";
+import MyProjects from "./components/myProjects/MyProjects";
+
 function App() {
   return (
     <div>
-      {/* <MouseCursor /> */}
+      <MouseCursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
@@ -22,7 +24,7 @@ function App() {
       <section id="Projects">
         <Parallax type="projects" />
       </section>
-      <Projects />
+      <MyProjects />
       <section id="Contact">
         <Contact />
       </section>
