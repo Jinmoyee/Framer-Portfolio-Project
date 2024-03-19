@@ -1,42 +1,53 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 import "./myProjects.scss";
+import Estate from "../../assets/images/Real Estate.png";
+import Chat from "../../assets/images/Chat App.png";
+import Juice from "../../assets/images/Juice Banner.png";
+import Shopping from "../../assets/images/HTML-CSS Shopping Website.png";
 
 const Projects = [
   {
     id: 1,
-    title: "Real Estate Website",
-    img: "https://cdn.pixabay.com/photo/2017/12/03/22/11/winter-landscape-2995987_640.jpg",
-    docs: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates debitis earum illum delectus eaque et voluptatum aut? Voluptate suscipit ipsam sequi odio exercitationem vero dicta eaque ratione possimus voluptas.",
-    url: "https://github.com/Jinmoyee/Real-Estate-Website",
+    title: "Real Estate Website using MERN",
+    img: Estate,
+    docs: "It is an online platform built using the MERN stack, comprising MongoDB, Express.js, React.js, and Node.js, offering a seamless shopping experience. With its robust backend and dynamic frontend, it enables users to browse, purchase, and manage products effortlessly, embodying the essence of modern ecommerce solutions.",
+    url: "https://jt-estate.onrender.com",
   },
   {
     id: 2,
-    title: "ECommerce Dashboard",
-    img: "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg",
-    docs: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates debitis earum illum delectus eaque et voluptatum aut? Voluptate suscipit ipsam sequi odio exercitationem vero dicta eaque ratione possimus voluptas.",
-    url: "https://github.com/Jinmoyee/ECommerce-Dashboard",
+    title: "Chat Application using MERN",
+    img: Chat,
+    docs: "It is a real-time messaging platform built using the MERN stack (MongoDB, Express.js, React.js, and Node.js). Users can engage in instant communication, create chat rooms, and share multimedia seamlessly. With its responsive design and robust backend, MERN Chat Website offers a dynamic and interactive chatting experience.",
+    url: "https://real-time-chat-app-h84z.onrender.com",
   },
   {
     id: 3,
-    title: "Shopping Website",
-    img: "https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_640.jpg",
-    docs: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates debitis earum illum delectus eaque et voluptatum aut? Voluptate suscipit ipsam sequi odio exercitationem vero dicta eaque ratione possimus voluptas.",
-    url: "https://github.com/Jinmoyee/Shopping-Website",
+    title: "HTML & CSS Shopping Website",
+    img: Shopping,
+    docs: "It is a user-friendly online platform designed with intuitive navigation and visually appealing layouts. Seamlessly integrating HTML for content structure and CSS for styling, it offers a delightful shopping experience, showcasing products in an organized and aesthetically pleasing manner. With its responsive design, this website ensures accessibility across various devices, enhancing user engagement and satisfaction.",
+    url: "https://jinmoyee.github.io/Blog-HTML-AND-CSS-Website/",
   },
   {
     id: 4,
-    title: "Blog Website",
+    title: "HTML & CSS Blog Website",
     img: "https://cdn.pixabay.com/photo/2017/07/18/18/24/dove-2516641_640.jpg",
-    docs: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates debitis earum illum delectus eaque et voluptatum aut? Voluptate suscipit ipsam sequi odio exercitationem vero dicta eaque ratione possimus voluptas.",
-    url: "https://github.com/Jinmoyee/Blog-Website",
+    docs: "It is your ultimate destination for all things web development. Whether you're a beginner or an expert, discover insightful tutorials, tips, and tricks to enhance your HTML and CSS skills. Stay updated with the latest trends and techniques to create stunning websites.",
+    url: "https://jinmoyee.github.io/Blog-HTML-AND-CSS-Website/",
   },
   {
     id: 5,
-    title: "Social Media",
+    title: "HTML and CSS Restaurant Website",
     img: "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
-    docs: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates debitis earum illum delectus eaque et voluptatum aut? Voluptate suscipit ipsam sequi odio exercitationem vero dicta eaque ratione possimus voluptas.",
-    url: "https://github.com/Jinmoyee/Social-Media",
+    docs: "It is a dynamic web platform offering an immersive dining experience. With seamless navigation and visually captivating design, it combines the artistry of HTML and CSS to showcase culinary delights and engage visitors.",
+    url: "https://jinmoyee.github.io/Restaurant-HTML-AND-CSS-Website/",
+  },
+  {
+    id: 6,
+    title: "HTML and CSS Parallax Website",
+    img: "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+    docs: "It is a dynamic platform that employs parallax scrolling effects achieved through HTML and CSS. It offers an immersive browsing experience, where background images move at different speeds to create a sense of depth. This website showcases the synergy between HTML and CSS to craft visually captivating and interactive web pages.",
+    url: "https://jinmoyee.github.io/Parallax-HTML-AND-CSS-Website/",
   },
 ];
 
