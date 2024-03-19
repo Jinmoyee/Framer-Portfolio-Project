@@ -1,3 +1,53 @@
-.main-page {
-    height: 100vh;
+.skills {
+    background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
+    height: 100dvh;
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            color: white;
+            margin-bottom: 2rem;
+            span {
+                font-size: 3rem;
+                font-weight: 200;
+                color: orangered;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .skills {
+        .skills-container {
+            h2 {
+                font-size: 4rem;
+                span {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills {
+        .skills-container {
+            justify-content: normal;
+            h2 {
+                margin-top: 2rem;
+                font-size: 4rem;
+                span {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
 }

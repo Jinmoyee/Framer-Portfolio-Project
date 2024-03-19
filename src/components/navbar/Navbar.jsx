@@ -5,12 +5,14 @@ import x from "../../assets/icons/x.png";
 import fb from "../../assets/icons/fb.png";
 import instagram from "../../assets/icons/instagram.png";
 import linkedin from "../../assets/icons/linkedin.png";
+import SideBar from "../SideBar/SideBar";
 
 // import SideBar from "../SideBar/SideBar";
 
 export default function NavBar() {
   return (
     <div>
+      <SideBar />
       <div className="navbar">
         <span className="">JINMOYEE DEV</span>
         <div className="wrapper">

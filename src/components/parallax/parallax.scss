@@ -62,4 +62,17 @@
     }
 }
 
+@media (min-width: 768px) {
+    .parallax-container {
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 10rem;
+        }
+    
+        .mountains-image {
+            background-size: cover;
+        }
+    }
+}
+
 

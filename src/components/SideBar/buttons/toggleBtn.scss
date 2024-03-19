@@ -1,0 +1,28 @@
+.toggle-btn-container {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background-color: transparent;
+    border: none;
+    z-index: 50;
+    //new
+    border-radius: 50%;
+
+    .motion-bar-div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        margin-left: 0.80rem;
+
+        .motion-bar {
+            color: black;
+            font-size: 0.1px;
+            padding: 2px;
+            width: 25px;
+            background-color: black;
+            border-radius: 5px;
+        }
+    }
+}
