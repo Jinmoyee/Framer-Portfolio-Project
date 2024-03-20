@@ -186,6 +186,11 @@
                 padding: 15px;
                 cursor: pointer;
             }
+
+            button:hover {
+                background-color: #FFA500;
+                color: white;
+            }
         }
     }
 }
