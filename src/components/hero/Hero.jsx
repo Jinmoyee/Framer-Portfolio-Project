@@ -54,12 +54,16 @@ export default function Hero() {
           </motion.h1>
           <motion.div className="details" variants={textVariant}>
             <motion.div variants={textVariant}>
-              <motion.button className="project-btn" variants={textVariant}>
-                See my Latest Projects
-              </motion.button>
-              <motion.button className="contact-btn" variants={textVariant}>
-                Contact me
-              </motion.button>
+              <a href="#Projects">
+                <motion.button className="project-btn" variants={textVariant}>
+                  See my Latest Projects
+                </motion.button>
+              </a>
+              <a href="#Contact">
+                <motion.button className="contact-btn" variants={textVariant}>
+                  Contact me
+                </motion.button>
+              </a>
             </motion.div>
             <motion.img
               src={scroll}
@@ -82,7 +86,7 @@ export default function Hero() {
             animate="animate"
             variants={sliderVariant}
           >
-            Influencer and Full-Stack Developer
+            Coder and Full-Stack Developer
           </motion.div>
         </div>
       </motion.div>

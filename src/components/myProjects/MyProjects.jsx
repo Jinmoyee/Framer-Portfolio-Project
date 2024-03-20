@@ -3,8 +3,10 @@ import { useRef } from "react";
 import "./myProjects.scss";
 import Estate from "../../assets/images/Real Estate.png";
 import Chat from "../../assets/images/Chat App.png";
-import Juice from "../../assets/images/Juice Banner.png";
 import Shopping from "../../assets/images/HTML-CSS Shopping Website.png";
+import Blog from "../../assets/images/Blog.png";
+import Food from "../../assets/images/Food.png";
+import Parallax from "../../assets/images/Parallax.png";
 
 const Projects = [
   {
@@ -26,26 +28,26 @@ const Projects = [
     title: "HTML & CSS Shopping Website",
     img: Shopping,
     docs: "It is a user-friendly online platform designed with intuitive navigation and visually appealing layouts. Seamlessly integrating HTML for content structure and CSS for styling, it offers a delightful shopping experience, showcasing products in an organized and aesthetically pleasing manner. With its responsive design, this website ensures accessibility across various devices, enhancing user engagement and satisfaction.",
-    url: "https://jinmoyee.github.io/Blog-HTML-AND-CSS-Website/",
+    url: "https://jinmoyee.github.io/HTML-CSS-Shopping-Website/index.html",
   },
   {
     id: 4,
     title: "HTML & CSS Blog Website",
-    img: "https://cdn.pixabay.com/photo/2017/07/18/18/24/dove-2516641_640.jpg",
+    img: Blog,
     docs: "It is your ultimate destination for all things web development. Whether you're a beginner or an expert, discover insightful tutorials, tips, and tricks to enhance your HTML and CSS skills. Stay updated with the latest trends and techniques to create stunning websites.",
     url: "https://jinmoyee.github.io/Blog-HTML-AND-CSS-Website/",
   },
   {
     id: 5,
     title: "HTML and CSS Restaurant Website",
-    img: "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+    img: Food,
     docs: "It is a dynamic web platform offering an immersive dining experience. With seamless navigation and visually captivating design, it combines the artistry of HTML and CSS to showcase culinary delights and engage visitors.",
     url: "https://jinmoyee.github.io/Restaurant-HTML-AND-CSS-Website/",
   },
   {
     id: 6,
     title: "HTML and CSS Parallax Website",
-    img: "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+    img: Parallax,
     docs: "It is a dynamic platform that employs parallax scrolling effects achieved through HTML and CSS. It offers an immersive browsing experience, where background images move at different speeds to create a sense of depth. This website showcases the synergy between HTML and CSS to craft visually captivating and interactive web pages.",
     url: "https://jinmoyee.github.io/Parallax-HTML-AND-CSS-Website/",
   },
@@ -71,7 +73,7 @@ const Single = ({ item }) => {
             <div className="button-tag">
               <motion.button
                 whileHover={{ backgroundColor: "#FFA500" }}
-                whileTap={{ scale: 0.9 }}
+                whileTap={{ scale: 1.1 }}
                 onClick={() => window.open(item.url, "_blank")}
               >
                 See Demo

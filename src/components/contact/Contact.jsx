@@ -87,8 +87,8 @@ export default function Contact() {
       >
         <svg
           className="z-[-1]"
-          width="450px"
-          height="450px"
+          width="400px"
+          height="400px"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
