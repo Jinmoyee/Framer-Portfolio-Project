@@ -1,6 +1,6 @@
 import "./hero.scss";
 import scroll from "../../assets/icons/scroll.png";
-import hero from "../../assets/icons/hero.png";
+import hero from "../../assets/icons/hero.jpeg";
 import { motion } from "framer-motion";
 
 const textVariant = {

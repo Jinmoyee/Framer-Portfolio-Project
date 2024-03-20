@@ -93,15 +93,18 @@
                 position: absolute;
                 height: 100%;
                 bottom: 0;
+                right: auto;
                 div {
                     display: flex;
                     justify-content: center;
                     width: 100%;
                     position: absolute;
-                    bottom: 0;
+                    bottom: 2%;
                     img {
-                        width: 320px;
-                        height: 320px;
+                        border: 5px solid white;
+                        border-radius: 50%;
+                        width: 240px;
+                        height: 300px;
                     }
                 }
             }
@@ -165,10 +168,11 @@
             }
             div {
                 .my-photo {
+                    right: 27%;
                     div {
                         img {
-                            width: 500px;
-                            height: 500px;
+                            width: 370px;
+                            height: 450px;
                         }
                     }
                 }
@@ -246,8 +250,9 @@
             div {
                 .my-photo {
                     div {
+                        bottom: 10%;
                         img {
-                            width: 500px;
+                            width: 420px;
                             height: 500px;
                         }
                     }
@@ -281,10 +286,11 @@
             }
             div {
                 .my-photo {
+                    bottom: 10%;
                     div {
                         img {
-                            width: 600px;
-                            height: 600px;
+                            width: 360px;
+                            height: 440px;
                         }
                     }
                 }
