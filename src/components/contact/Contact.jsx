@@ -65,7 +65,7 @@ export default function Contact() {
         <div className="information">
           <motion.div className="detail" variants={variants}>
             <span>Mail</span>
-            <p>jimoyee99@gmail.com</p>
+            <p>jinmoyee99@gmail.com</p>
           </motion.div>
           <motion.div className="detail" variants={variants}>
             <span>Address</span>
